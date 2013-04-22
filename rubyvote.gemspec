@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'rubyvote'
-  s.version     = '0.3.0'
+  s.version     = '0.3.1'
   s.summary     = "Voting methods library."
   s.description = "Library to handle calculating election results for several different voting methods."
   s.authors     = ["makoshark", "bpmcd"]
