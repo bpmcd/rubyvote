@@ -165,10 +165,14 @@ protected
 
   def remove_candidate(votes, loser)
     votes.each_pair do |candidate, morevotes|
+      temp_hash = {}
       hash = morevotes[1]
       hash.each_pair do |vote, count|
         hash.delete(vote)
         vote.delete(loser)
+        temp_hash[vote] = count
+      end
+      temp_hash.each_pair do |vote, count|
         hash[vote] = count
       end
     end
